@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="desktop">
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="about-toggle" class="window-toggle">
+        <input type="checkbox" id="experiences-toggle" class="window-toggle">
+        <input type="checkbox" id="projects-toggle" class="window-toggle">
+        <input type="checkbox" id="skills-toggle" class="window-toggle">
+        <input type="checkbox" id="menu-toggle" class="window-toggle">
+
+        <div class="bar">
+            <label class="bar-windows" for="menu-toggle">
+                <img class="windows-icon" src="../public/windows.svg" alt="Windows">
+                <p class="icon-label">Start</p>
+            </label>
+            <input class="input-bar" type="text">
+            <div class="bar-social">
+                <a href="https://linkedin.com/in/your-profile" target="_blank">
+                    <img class="bar-social-icon" src="../public/linkedin-logo.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com/your-profile" target="_blank">
+                    <img class="bar-social-icon" src="../public/insta-logo.svg" alt="Instagram">
+                </a>
+                <a href="https://github.com/your-username" target="_blank">
+                    <img class="bar-social-icon" src="../public/github-logo.svg" alt="Github">
+                </a>
+            </div>
+        </div>
+        
+        <div class="desktop-icons">
+            <label for="about-toggle" class="desktop-icon">
+                <img 
+                    src="../public/folder.svg" 
+                    alt="About Me"
+                    class="icon-image"
+                />
+                <span class="icon-label">About Me</span>
+            </label>
+            <label for="experiences-toggle" class="desktop-icon">
+                <img 
+                    src="../public/word.svg"
+                    alt="Experiences"
+                    class="social-icon"
+                />
+                <span class="icon-label">Experiences</span>
+            </label>
+            <label for="projects-toggle" class="desktop-icon">
+                <img 
+                    src="../public/ppt.svg"
+                    alt="Projects"
+                    class="social-icon"
+                />
+                <span class="icon-label">Projects</span>
+            </label>
+            <label for="skills-toggle" class="desktop-icon">
+                <img 
+                    src="../public/excel.svg"
+                    alt="Skills"
+                    class="social-icon"
+                />
+                <span class="icon-label">Skills</span>
+            </label>
+        </div>
+
+        <!-- Window Menu -->
+        <div class="window-for-menu" id="menu-window">
+            <div class="user-top">
+                <img src="../public/profile.jpg" alt="Me">
+                <p>Rizain</p>
+            </div>
+            <div class="window-container">
+                <div class="window-sub-container">
+                    <img src="../public/folder.svg" alt="">
+                    <p>Private Folder</p>
+                </div>
+                <div class="window-sub-container">
+                    <img src="../public/folder.svg" alt="">
+                    <p>Built using HTML5 and CSS</p>
+                </div>
+                <div class="window-sub-container">
+                    <img src="../public/folder.svg" alt="">
+                    <p>Static HTML @2025 Reserved by Rizain.</p>
+                </div>
+                
+            </div>
+            <!-- <div class="window-menu-content">
+                <div class="window-container">
+                    
+                </div>
+            </div> -->
+        </div>
+        
+        <!-- Window About Me -->
+        <div class="window" id="about-window">
+            <div class="window-header">
+                <p class="window-title">About Me</p>
+                <div class="window-controls">
+                    <button class="control-btn minimize">-</button>
+                    <button class="control-btn maximize">□</button>
+                    <label for="about-toggle" class="control-btn close">×</label>
+                </div>
+            </div>
+            <div class="window-content">
+                <h2>About Me</h2>
+                <img class="image-profile" src="../public/profile.jpg" alt="Profile">
+                <p>
+                    Hello there, I'm Rizain a passionate software/creative developer to engineer. 
+                    Currently focusing to study as an undergraduate Informatics Student at Institut Teknologi Bandung and 
+                    enhancing my skills on Software Programming including building websites, applications, and designing 
+                    UI/UX for solving a strategical problems with cutting edge technologies. I love to learn low-level-languages 
+                    and using it as an alternative for higher level problems. Love to learn, play, and hang out.
+                </p>
+            </div>
+        </div>
+
+        <!-- Window Experiences -->
+        <div class="window" id="experiences-window">
+            <div class="window-header">
+                <p class="window-title">Experiences</p>
+                <div class="window-controls">
+                    <button class="control-btn minimize">-</button>
+                    <button class="control-btn maximize">□</button>
+                    <label for="experiences-toggle" class="control-btn close">×</label>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="window-container">
+                    <div class="window-content-container-col">
+                        <div class="window-content-container-row">
+                            <h2>> Software Engineer</h2>
+                            <p>Sep 2025 - Present</p>
+                        </div>
+                        <p>Inkubator IT</p>
+                    </div>
+                    <div class="window-content-container-col">
+                        <div class="window-content-container-row">
+                            <h2>> Lead Software Engineer</h2>
+                            <p>Aug 2025 - Present</p>
+                        </div>
+                        <p>VICII</p>
+                    </div>
+                    <div class="window-content-container-col">
+                        <div class="window-content-container-row">
+                            <h2>> Software Developer - Frontend</h2>
+                            <p>Dec 2024 - Present</p>
+                        </div>
+                        <p>HMIF - ITB</p>
+                    </div>
+                    <div class="window-content-container-col">
+                        <div class="window-content-container-row">
+                            <h2>> UI/X Designer</h2>
+                            <p>Nov 2024 - Des 2024</p>
+                        </div>
+                        <p>Parade Wisuda Oktober HMIF - ITB 2024</p>
+                    </div>
+                    <div class="window-content-container-col">
+                        <div class="window-content-container-row">
+                            <h2>> UI/X Designer</h2>
+                            <p>Aug 2024 - Nov 2024</p>
+                        </div>
+                        <p>BAWASLU RI</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Window Projects -->
+        <div class="window" id="projects-window">
+            <div class="window-header">
+                <p class="window-title">Selected Projects</p>
+                <div class="window-controls">
+                    <button class="control-btn minimize">-</button>
+                    <button class="control-btn maximize">□</button>
+                    <label for="projects-toggle" class="control-btn close">×</label>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="window-container">
+                    <h2>
+                        >
+                        <a href="https://readibly.vercel.app/" target="_blank">Readibly: SaaS to Help Learning Disabilities</a>
+                    </h2>
+                    <p>Fullstack Engineer</p>
+                    <p>
+                        Created a SaaS website to help a range of users with learning disability, 
+                        especially in reading to maintain their reading capabilities and enhance their 
+                        learning process using cutting-edge technologies such as pdf-parsing using regex, 
+                        text-to-speech or speech-to-text, and eye-tracker using WebGazer API and wrap using 
+                        robust clean Typescript, Javascript, NextJS, and TailwindCSS. Projecting a successful 
+                        web usage for around 50-70% improvements to the learning and reading capabilities of 
+                        the users. Make it also fun for users to adapt and learn only using their browser. 
+                        Created an 80% accuracy for users to use the pdf-parsing regex method and wrap it using 
+                        a friendly dyslexia experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Window Skills -->
+        <div class="window" id="skills-window">
+            <div class="window-header">
+                <p class="window-title">Skills</p>
+                <div class="window-controls">
+                    <button class="control-btn minimize">-</button>
+                    <button class="control-btn maximize">□</button>
+                    <label for="skills-toggle" class="control-btn close">×</label>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="window-container">
+                    <h2>Skills</h2>
+                    <div class="skills-container">
+                        <img src="../public/Next.js.svg" alt="Skill">
+                        <img src="../public/Tailwind CSS.svg" alt="Skill">
+                        <img src="../public/React.svg" alt="Skill">
+                        <img src="../public/Express.svg" alt="Skill">
+                        <img src="../public/Vue.js.svg" alt="">
+                        <img src="../public/Vite.js.svg" alt="">
+                        <img src="../public/Node.js.svg" alt="">
+                        <img src="../public/Express.svg" alt="">
+                        <img src="../public/MongoDB.svg" alt="">
+                        <img src="../public/TypeScript.svg" alt="">
+                        <img src="../public/JavaScript.svg" alt="">
+                        <img src="../public/Python.svg" alt="">
+                        <img src="../public/HTML5.svg" alt="">
+                        <img src="../public/CSS3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
